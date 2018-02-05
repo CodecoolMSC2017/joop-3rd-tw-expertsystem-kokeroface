@@ -33,7 +33,7 @@
             </Selection>
         </Answer>
     </Rule>
-    <Rule id="Pegi">
+    <Rule id="pegi">
         <Question>Do you want a game with mature content?</Question>
         <Answer>
             <Selection value="true">
@@ -44,7 +44,7 @@
             </Selection>
         </Answer>
     </Rule>
-    <Rule id="Type">
+    <Rule id="type">
         <Question>Do you want an openworld game</Question>
         <Answer>
             <Selection value="true">
@@ -55,7 +55,7 @@
             </Selection>
         </Answer>
     </Rule>
-    <Rule id="View">
+    <Rule id="view">
         <Question>Do you want a tps game?</Question>
         <Answer>
             <Selection value="true">
@@ -66,14 +66,14 @@
             </Selection>
         </Answer>
     </Rule>
-    <Rule id="Details">
-        <Question>What details important for you</Question>
+    <Rule id="details">
+        <Question>What details are important for you?</Question>
         <Answer>
             <Selection value="true">
-                <MultipleValue value="Story oriented,Competitiv,Crafting system,Loot system"/>
+                <MultipleValue value="Story oriented, Crafting system, Loot system"/>
             </Selection>
             <Selection value="false">
-                <MultipleValue value="Bug free,"/>
+                <MultipleValue value="Bug free, Competitive, Optimized"/>
             </Selection>
         </Answer>
     </Rule>
