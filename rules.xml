@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Rules>
+    <Rule id="money">
+        <Question>Do you have 30 Eur for a Game?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="graphics">
+        <Question>Graphics important for you?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="multiplayer">
+        <Question>Playing with others important for you?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="Pegi">
+        <Question>Do you want a game with mature content?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="Type">
+        <Question>Do you want an openworld game</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="View">
+        <Question>Do you want a tps game?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="Details">
+        <Question>What details important for you</Question>
+        <Answer>
+            <Selection value="true">
+                <MultipleValue value="Story oriented,Competitiv,Crafting system,Loot system"/>
+            </Selection>
+            <Selection value="false">
+                <MultipleValue value="Bug free,"/>
+            </Selection>
+        </Answer>
+    </Rule>
+</Rules>		
