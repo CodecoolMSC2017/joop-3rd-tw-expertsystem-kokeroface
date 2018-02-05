@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="kokeroface" />
+        <module name="expertsystem" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="kokeroface" target="1.5" />
+      <module name="expertsystem" target="1.9" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/kokeroface.iml" filepath="$PROJECT_DIR$/kokeroface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/expertsystem.iml" filepath="$PROJECT_DIR$/expertsystem.iml" />
     </modules>
   </component>
 </project>
