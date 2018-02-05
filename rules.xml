@@ -12,7 +12,7 @@
         </Answer>
     </Rule>
     <Rule id="graphics">
-        <Question>Graphics important for you?</Question>
+        <Question>Are graphics important for you?</Question>
         <Answer>
             <Selection value="true">
                 <SingleValue value="yes"/>
