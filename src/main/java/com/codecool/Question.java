@@ -1,23 +1,28 @@
 package com.codecool;
 
 public class Question {
-    public Question(String id, Answer answer) {
+    private String id;
+    private Question question;
+    private Answer answer;
 
+    public Question(String id, Answer answer) {
+        this.id = id;
+        this.answer = answer;
     }
 
     public String getId() {
 
-        return null;
+        return id;
     }
 
     public String getQuestion() {
 
-        return null;
+        return question;
     }
 
     public Answer getAnswer() {
 
-        return null;
+        return answer;
     }
 
     public boolean getEvaluatedAnswer(String input) {
