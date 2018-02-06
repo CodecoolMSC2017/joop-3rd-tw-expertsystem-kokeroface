@@ -12,10 +12,6 @@ public class FactRepository {
         facts.add(fact);
     }
 
-    public List<Fact> getFactList() {
-        return facts;
-    }
-
     public Iterator<Fact> getIterator() {
 
         return null;
