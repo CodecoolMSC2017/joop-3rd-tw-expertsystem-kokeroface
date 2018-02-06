@@ -4,8 +4,7 @@ import java.util.Set;
 
 public class Fact {
 
-    private String id;
-    private String description;
+    protected String id, description;
 
     public Fact(String id, String description) {
         this.id = id;
