@@ -7,9 +7,15 @@ public class Answer {
 
     List<Value> values = new ArrayList<>();
 
-    public boolean evaluateAnswerByInput(String input) {
+    public boolean evaluateAnswerByInput(String input) throws Exception {
 
-        return false;
+        input = input.toLowerCase();
+        if (input.equals("yes") ) {
+            return true;
+        } else if (input.equals("no")) {
+            return false;
+        }
+        throw new Exception("Wrong input");
     }
 
     public void addValue(Value value) {
