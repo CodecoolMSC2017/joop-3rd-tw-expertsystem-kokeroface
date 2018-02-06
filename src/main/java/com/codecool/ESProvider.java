@@ -2,12 +2,12 @@ package com.codecool;
 
 public class ESProvider {
 
-    FactParser fact;
-    RuleParser rule;
+    private FactRepository factRepository;
+    private RuleRepository ruleRepository;
 
-    public ESProvider(FactParser fact, RuleParser rule) {
-        this.fact = fact;
-        this.rule = rule;
+    public ESProvider(FactParser factParser, RuleParser ruleParser) throws Exception {
+        this.factRepository = factParser.getFactRepository();
+        this.ruleRepository = ruleParser.getRuleRepository();
     }
 
     public void collectAnswers() {
@@ -15,12 +15,18 @@ public class ESProvider {
     }
 
     public boolean getAnswerByQuestion(String questionId) {
-
-        return false;
+        return true;
     }
 
     public String evaluate() {
-
         return null;
+    }
+
+    public FactRepository getFactRepository() {
+        return factRepository;
+    }
+
+    public RuleRepository getRuleRepository() {
+        return ruleRepository;
     }
 }
