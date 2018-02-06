@@ -2,7 +2,7 @@ package com.codecool;
 
 import java.util.Iterator;
 
-public class FactRepository extends XMLParser {
+public class FactRepository {
     public void addFact(Fact fact) {
 
     }

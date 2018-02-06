@@ -2,7 +2,7 @@ package com.codecool;
 
 import java.util.Iterator;
 
-public class RuleRepository extends XMLParser {
+public class RuleRepository {
     public void addQuestion(Question question) {
 
     }
