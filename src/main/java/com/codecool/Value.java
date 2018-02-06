@@ -7,4 +7,8 @@ public abstract class Value {
 
         return null;
     }
+
+    public boolean getSelectionType() {
+        return true;
+    }
 }

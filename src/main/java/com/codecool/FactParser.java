@@ -5,8 +5,6 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import java.io.File;
-
 public class FactParser extends XMLParser {
 
     String id,description,evalid;
