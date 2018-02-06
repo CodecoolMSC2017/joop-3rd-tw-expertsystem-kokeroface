@@ -21,10 +21,13 @@ public abstract class XMLParser {
             DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
             doc = documentBuilder.parse(input);
             doc.getDocumentElement().normalize();
-
         } catch (Exception e) {
             throw new Exception();
         }
+    }
+
+    public Document getDoc() {
+        return doc;
     }
 }
 
