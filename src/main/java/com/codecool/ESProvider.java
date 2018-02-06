@@ -2,6 +2,7 @@ package com.codecool;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Scanner;
 
 public class ESProvider {
 
@@ -25,6 +26,25 @@ public class ESProvider {
     }
 
     public boolean getAnswerByQuestion(String questionId) {
+
+        Scanner userInput = new Scanner(System.in);
+        Iterator<Question> iterator = ruleRepository.getIterator();
+        while (iterator.hasNext()) {
+            Question question = iterator.next();
+            if (questionId.equals(question.getId())) {
+                System.out.println(question.getQuestion());
+                String answer;
+                while (true) {
+                    try {
+                        answer = userInput.nextLine();
+                        boolean result = question.getEvaluatedAnswer(answer);
+                        return result;
+                    } catch (Exception e) {
+                        System.out.println(e.getMessage());
+                    }
+                }
+            }
+        }
         return false;
     }
 
