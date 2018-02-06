@@ -21,13 +21,12 @@ public class FactParser extends XMLParser {
                 String description = eElement.getElementsByTagName("Description").item(0).getAttributes().getNamedItem("value").getNodeValue();
                 Fact fact = new Fact(id, description);
                 NodeList evals = eElement.getElementsByTagName("Eval");
-                for (int i = 0; i < evals.getLength() ; i++) {
+                for (int i = 0; i < evals.getLength(); i++) {
                     Node mNode = evals.item(i);
                     if(mNode.getNodeType() == Node.ELEMENT_NODE){
                         Element eval = (Element)mNode;
                         String evalId = eval.getAttribute("id");
                         boolean value = Boolean.parseBoolean(eval.getTextContent().trim());
-
                         fact.setFactValueById(evalId, value);
                     }
                 }
