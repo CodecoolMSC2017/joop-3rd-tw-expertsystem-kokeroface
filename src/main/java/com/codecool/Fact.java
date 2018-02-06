@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class Fact {
 
-    private String id, description;
+    String id, description;
     private HashMap<String, Boolean> values = new HashMap<>();
 
     Fact(String id, String description) {
