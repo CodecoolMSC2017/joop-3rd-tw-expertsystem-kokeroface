@@ -10,7 +10,7 @@ public class ESProvider {
     private RuleRepository ruleRepository;
     private HashMap<String, Boolean> answers = new HashMap<>();
 
-    public ESProvider(FactParser fact, RuleParser rule) throws Exception {
+    ESProvider(FactParser fact, RuleParser rule) throws Exception {
         this.factRepository = fact.getFactRepository();
         this.ruleRepository = rule.getRuleRepository();
     }
@@ -33,10 +33,9 @@ public class ESProvider {
             Question question = iterator.next();
             if (questionId.equals(question.getId())) {
                 System.out.println(question.getQuestion());
-                String answer;
                 while (true) {
                     try {
-                        answer = userInput.nextLine();
+                        String answer = userInput.nextLine();
                         boolean result = question.getEvaluatedAnswer(answer);
                         return result;
                     } catch (Exception e) {

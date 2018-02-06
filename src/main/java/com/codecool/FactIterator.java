@@ -8,16 +8,13 @@ public class FactIterator implements Iterator {
     private int i;
     private List<Fact> list;
 
-    public FactIterator(List<Fact> list) {
+    FactIterator(List<Fact> list) {
         this.list = list;
     }
 
     @Override
     public boolean hasNext() {
-        if (i < list.size()) {
-            return true;
-        }
-        return false;
+        return i < list.size();
     }
 
     @Override

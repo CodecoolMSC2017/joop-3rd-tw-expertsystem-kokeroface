@@ -2,10 +2,10 @@ package com.codecool;
 
 public class Question {
     
-    protected String id, question;
-    protected Answer answer;
+    private String id, question;
+    private Answer answer;
 
-    public Question(String id, String question,Answer answer) {
+    Question(String id, String question,Answer answer) {
         this.id = id;
         this.answer = answer;
         this.question = question;
@@ -26,7 +26,7 @@ public class Question {
         return answer;
     }
 
-    public boolean getEvaluatedAnswer(String input) {
+    public boolean getEvaluatedAnswer(String input) throws Exception {
         boolean choice = answer.evaluateAnswerByInput(input);
         return choice;
     }

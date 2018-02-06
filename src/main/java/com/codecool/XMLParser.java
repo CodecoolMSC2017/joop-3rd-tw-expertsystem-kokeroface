@@ -8,13 +8,13 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class XMLParser {
+abstract class XMLParser {
 
     private List<Fact> facts = new ArrayList<>();
     private List<Question> questions = new ArrayList<>();
     private Document doc;
 
-    protected void loadXmlDocument(String xmlPath) throws Exception {
+    void loadXmlDocument(String xmlPath) throws Exception {
         try {
             File input = new File(xmlPath);
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
@@ -26,7 +26,7 @@ public abstract class XMLParser {
         }
     }
 
-    public Document getDoc() {
+    Document getDoc() {
         return doc;
     }
 }

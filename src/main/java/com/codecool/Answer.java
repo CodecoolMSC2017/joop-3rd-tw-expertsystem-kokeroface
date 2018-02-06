@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Answer {
 
-    List<Value> values = new ArrayList<>();
+    private List<Value> values = new ArrayList<>();
 
     public boolean evaluateAnswerByInput(String input) throws Exception {
 
