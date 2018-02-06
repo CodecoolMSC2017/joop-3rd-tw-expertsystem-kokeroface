@@ -1,9 +1,6 @@
 package com.codecool;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -13,10 +10,8 @@ public class Main {
         Iterator<Fact> fit = factrepo.getIterator();
         Iterator<Question> qit = rulerepo.getIterator();
 
-        /*while (qit.hasNext()) {
+        while (qit.hasNext()) {
             esp.getAnswerByQuestion(qit.next().id);
-        }*/
-
-
+        }
     }
 }
