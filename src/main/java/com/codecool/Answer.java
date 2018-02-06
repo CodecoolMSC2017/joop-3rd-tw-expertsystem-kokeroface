@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class Answer {
 
+    @SuppressWarnings("MismatchedQueryAndUpdateOfCollection")
     private List<Value> values = new ArrayList<>();
 
     public boolean evaluateAnswerByInput(String input) throws Exception {
@@ -20,5 +21,9 @@ public class Answer {
 
     public void addValue(Value value) {
         values.add(value);
+    }
+
+    public List<Value> getValues() {
+        return values;
     }
 }
