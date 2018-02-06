@@ -5,6 +5,8 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import java.io.File;
+
 public class FactParser extends XMLParser {
 
     String id,description,evalid;
@@ -15,6 +17,7 @@ public class FactParser extends XMLParser {
 
     public FactRepository getFactRepository() throws Exception {
         loadXmlDocument("facts.xml");
+        doc = getDoc();
         NodeList nList = doc.getElementsByTagName("Fact");
         FactRepository factRepository = new FactRepository();
         for (int temp = 0; temp < nList.getLength() ; temp++) {
