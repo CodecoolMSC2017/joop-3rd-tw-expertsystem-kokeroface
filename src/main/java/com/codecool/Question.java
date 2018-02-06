@@ -2,9 +2,8 @@ package com.codecool;
 
 public class Question {
     
-    private String id;
-    private String question;
-    private Answer answer;
+    protected String id, question;
+    protected Answer answer;
 
     public Question(String id, String question,Answer answer) {
         this.id = id;
