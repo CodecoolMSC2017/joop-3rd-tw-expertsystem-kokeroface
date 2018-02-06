@@ -7,16 +7,17 @@ import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.File;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class XMLParser {
 
-    List<Fact> facts = new ArrayList<>();
-    List<Question> questions = new ArrayList<>();
+    private List<Fact> facts = new ArrayList<>();
+    private List<Question> questions = new ArrayList<>();
 
-    public void loadXmlDocument(String xmlPath) {
+    public void loadXmlDocument(String xmlPath) throws Exception {
+        Answer answer = new Answer();
         try {
             File fXmlFile = new File(xmlPath);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -41,14 +42,14 @@ public abstract class XMLParser {
                     Node nNode = nList.item(temp);
                     if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                         Element eElement = (Element) nNode;
-                        Question question = new Question(eElement.getElementsByTagName("id").item(0).getTextContent(),
-                                eElement.getElementsByTagName("value").item(0).getTextContent());
+                        Question question = new Question(eElement.getElementsByTagName("id").item(0).getTextContent(), answer);
                         questions.add(question);
                     }
-        } catch (Exception e) {
+                }
+            }
+        } catch(Exception e) {
             e.printStackTrace();
         }
     }
-
-    }
 }
+
