@@ -1,8 +1,9 @@
 package com.codecool;
 
 public class Question {
+    
     private String id;
-    private Question question;
+    private String question;
     private Answer answer;
 
     public Question(String id, Answer answer) {
