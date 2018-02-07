@@ -1,11 +1,12 @@
 package com.codecool;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 public class Fact {
 
-    String id, description;
+    private String id, description;
     private HashMap<String, Boolean> values = new HashMap<>();
 
     Fact(String id, String description) {
