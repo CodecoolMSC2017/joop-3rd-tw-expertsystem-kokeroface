@@ -70,10 +70,10 @@
         <Question>What details are important for you?</Question>
         <Answer>
             <Selection value="true">
-                <MultipleValue value="Story oriented, Crafting system, Loot system"/>
+                <MultipleValue value="Story oriented,Crafting system,Loot system"/>
             </Selection>
             <Selection value="false">
-                <MultipleValue value="Bug free, Competitive, Optimized"/>
+                <MultipleValue value="Bug free,Competitive,Optimized"/>
             </Selection>
         </Answer>
     </Rule>
