@@ -5,33 +5,31 @@ import java.util.ArrayList;
 
 public class Answer {
 
-    @SuppressWarnings("MismatchedQueryAndUpdateOfCollection")
-    private List<Value> values = new ArrayList<>();
-    private int i;
-    private String possibleAnswer = "";
+    private List<Value> values;
+    public Answer() {
+        values = new ArrayList<>();
+    }
 
     public boolean evaluateAnswerByInput(String input) throws Exception {
-        if (values.get(i) instanceof SingleValue) {
-            if (input.equals(values.get(i).param.get(0).toString())) {
-                return values.get(i).selectionType;
-            } else if (input.equals(values.get(i + 1).param.get(0).toString())) {
-                return values.get(i + 1).selectionType;
+        if (values.get(0) instanceof SingleValue) {
+            if (input.equals(values.get(0).param.get(0).toString())) {
+                return values.get(0).selectionType;
+            } else if (input.equals(values.get(1).param.get(0).toString())) {
+                return values.get(1).selectionType;
             }
-            throw new Exception("Please enter either " + values.get(i).param.get(0) + " or " + values.get(i + 1).param.get(0));
+            throw new Exception("Please enter either " + values.get(0).param.get(0) + " or " + values.get(1).param.get(0));
 
         } else {
-            for (int j = 0; j < values.get(i).param.size(); j++) {
-                possibleAnswer += values.get(i).param.get(j)+"\n";
-                possibleAnswer += values.get(i+1).param.get(j)+"\n";
+            String possibleAnswer = "";
+            for (int j = 0; j < values.get(0).param.size(); j++) {
+                possibleAnswer += values.get(0).param.get(j)+"\n";
+                possibleAnswer += values.get(1).param.get(j)+"\n";
             }
-
-            for (int j = 0; j < values.get(i).param.size(); j++) {
-                if (input.equals(values.get(i).param.get(j).toString())) {
-                    System.out.println(values.get(i).selectionType);
-                    return values.get(i).selectionType;
-                } else if (input.equals(values.get(i+1).param.get(j).toString())) {
-                    System.out.println(values.get(i+1).selectionType);
-                    return values.get(i + 1).selectionType;
+            for (int j = 0; j < values.get(0).param.size(); j++) {
+                if (input.equals(values.get(0).param.get(j).toString())) {
+                    return values.get(0).selectionType;
+                } else if (input.equals(values.get(1).param.get(j).toString())) {
+                    return values.get(1).selectionType;
                 }
             }
             throw new Exception("Please enter one of the following:\n"+possibleAnswer);
