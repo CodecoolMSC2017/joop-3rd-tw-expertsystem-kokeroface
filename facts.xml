@@ -7,7 +7,7 @@
             <Eval id="graphics">true</Eval>
             <Eval id="multiplayer">true</Eval>
             <Eval id="pegi">true</Eval>
-	    <Eval id="type">false</Eval>
+	        <Eval id="type">false</Eval>
             <Eval id="view">true</Eval>
             <Eval id="details">false</Eval>
         </Evals>
@@ -19,7 +19,7 @@
             <Eval id="graphics">true</Eval>
             <Eval id="multiplayer">true</Eval>
             <Eval id="pegi">true</Eval>
-	    <Eval id="type">false</Eval>
+	        <Eval id="type">false</Eval>
             <Eval id="view">true</Eval>
             <Eval id="details">false</Eval>
         </Evals>
@@ -31,7 +31,7 @@
             <Eval id="graphics">true</Eval>
             <Eval id="multiplayer">true</Eval>
             <Eval id="pegi">false</Eval>
-	    <Eval id="type">false</Eval>
+	        <Eval id="type">false</Eval>
             <Eval id="view">true</Eval>
             <Eval id="details">false</Eval>
         </Evals>
@@ -43,7 +43,7 @@
             <Eval id="graphics">true</Eval>
             <Eval id="multiplayer">false</Eval>
             <Eval id="pegi">true</Eval>
-	    <Eval id="type">false</Eval>
+	        <Eval id="type">false</Eval>
             <Eval id="view">true</Eval>
             <Eval id="details">true</Eval>
         </Evals>
@@ -55,7 +55,7 @@
             <Eval id="graphics">true</Eval>
             <Eval id="multiplayer">true</Eval>
             <Eval id="pegi">true</Eval>
-	    <Eval id="type">true</Eval>
+	        <Eval id="type">true</Eval>
             <Eval id="view">true</Eval>
             <Eval id="details">false</Eval>
         </Evals>
@@ -67,7 +67,7 @@
             <Eval id="graphics">true</Eval>
             <Eval id="multiplayer">true</Eval>
             <Eval id="pegi">true</Eval>
-	    <Eval id="type">false</Eval>
+	        <Eval id="type">false</Eval>
             <Eval id="view">false</Eval>
             <Eval id="details">false</Eval>
         </Evals>
@@ -79,7 +79,7 @@
             <Eval id="graphics">true</Eval>
             <Eval id="multiplayer">true</Eval>
             <Eval id="pegi">true</Eval>
-	    <Eval id="type">false</Eval>
+	        <Eval id="type">false</Eval>
             <Eval id="view">true</Eval>
             <Eval id="details">true</Eval>
         </Evals>
@@ -91,7 +91,7 @@
             <Eval id="graphics">true</Eval>
             <Eval id="multiplayer">true</Eval>
             <Eval id="pegi">false</Eval>
-	    <Eval id="type">false</Eval>
+	        <Eval id="type">false</Eval>
             <Eval id="view">true</Eval>
             <Eval id="details">false</Eval>
         </Evals>
@@ -103,7 +103,7 @@
             <Eval id="graphics">false</Eval>
             <Eval id="multiplayer">true</Eval>
             <Eval id="pegi">false</Eval>
-	    <Eval id="type">true</Eval>
+	        <Eval id="type">true</Eval>
             <Eval id="view">false</Eval>
             <Eval id="details">true</Eval>
         </Evals>
@@ -115,7 +115,7 @@
             <Eval id="graphics">true</Eval>
             <Eval id="multiplayer">true</Eval>
             <Eval id="pegi">false</Eval>
-	    <Eval id="type">false</Eval>
+	        <Eval id="type">false</Eval>
             <Eval id="view">true</Eval>
             <Eval id="details">false</Eval>
         </Evals>
@@ -127,7 +127,7 @@
             <Eval id="graphics">true</Eval>
             <Eval id="multiplayer">false</Eval>
             <Eval id="pegi">true</Eval>
-	    <Eval id="type">false</Eval>
+	        <Eval id="type">false</Eval>
             <Eval id="view">true</Eval>
             <Eval id="details">true</Eval>
         </Evals>
@@ -139,7 +139,7 @@
             <Eval id="graphics">true</Eval>
             <Eval id="multiplayer">true</Eval>
             <Eval id="pegi">false</Eval>
-	    <Eval id="type">false</Eval>
+	        <Eval id="type">false</Eval>
             <Eval id="view">false</Eval>
             <Eval id="details">false</Eval>
         </Evals>
@@ -151,7 +151,7 @@
             <Eval id="graphics">true</Eval>
             <Eval id="multiplayer">true</Eval>
             <Eval id="pegi">false</Eval>
-	    <Eval id="type">false</Eval>
+	        <Eval id="type">false</Eval>
             <Eval id="view">false</Eval>
             <Eval id="details">false</Eval>
         </Evals>
