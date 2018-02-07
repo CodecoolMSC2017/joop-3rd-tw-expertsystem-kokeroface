@@ -20,9 +20,9 @@ class QuestionIteratorTest {
 
     @Test
     void hasNext() {
-        assertEquals(iterator.hasNext(),false);
+        assertEquals(false,iterator.hasNext());
         rulerepo.addQuestion(new Question("test1", "testQuestion1", new Answer()));
-        assertEquals(iterator.hasNext(),true);
+        assertEquals(true,iterator.hasNext());
     }
 
     @Test
