@@ -1,15 +1,30 @@
 package com.codecool;
 
+import java.util.ArrayList;
 import java.util.List;
 
-abstract class Value {
+public abstract class Value {
+    List<String> param;
+    boolean selectionType;
+
+    public Value(List<String> list, boolean selectionType) {
+        param = list;
+        this.selectionType = selectionType;
+
+    }
+
+    public Value(String param, boolean selectionType) {
+        List<String> list = new ArrayList<String>();
+        list.add(param);
+        this.param = list;
+        this.selectionType = selectionType;
+    }
 
     public List<String> getInputPattern() {
-
-        return null;
+        return param;
     }
 
     public boolean getSelectionType() {
-        return true;
+        return selectionType;
     }
 }
