@@ -85,13 +85,4 @@ public class ESProvider {
         }
         return game.substring(0, game.length() - 2);
     }
-
-    public FactRepository getFactRepository() {
-        return factRepository;
-    }
-
-    public RuleRepository getRuleRepository() {
-        return ruleRepository;
-    }
-
 }
