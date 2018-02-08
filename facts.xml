@@ -228,4 +228,28 @@
             <Eval id="details">false</Eval>
         </Evals>
     </Fact>
+    <Fact id="fallout">
+        <Description value="Fallout 4"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="graphics">false</Eval>
+            <Eval id="multiplayer">false</Eval>
+            <Eval id="pegi">true</Eval>
+            <Eval id="type">true</Eval>
+            <Eval id="view">false</Eval>
+            <Eval id="details">true</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="division">
+        <Description value="Tom Clancy's the Division"/>
+        <Evals>
+            <Eval id="money">true</Eval>
+            <Eval id="graphics">true</Eval>
+            <Eval id="multiplayer">true</Eval>
+            <Eval id="pegi">true</Eval>
+            <Eval id="type">true</Eval>
+            <Eval id="view">true</Eval>
+            <Eval id="details">true</Eval>
+        </Evals>
+    </Fact>
 </Facts>
