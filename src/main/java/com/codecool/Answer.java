@@ -14,15 +14,15 @@ public class Answer {
             } else if (input.equals(values.get(1).getInputPattern().get(0).toString())) {
                 return values.get(1).selectionType;
             }
-            throw new Exception("Please enter either " + values.get(0).param.get(0) + " or " + values.get(1).param.get(0));
+            throw new Exception("Please enter either " + values.get(0).getInputPattern().get(0) + " or " + values.get(1).param.get(0));
 
         } else {
             String possibleAnswer = "";
-            for (int j = 0; j < values.get(0).param.size(); j++) {
-                possibleAnswer += values.get(0).param.get(j)+"\n";
-                possibleAnswer += values.get(1).param.get(j)+"\n";
+            for (int j = 0; j < values.get(0).getInputPattern().size(); j++) {
+                possibleAnswer += values.get(0).getInputPattern().get(j)+"\n";
+                possibleAnswer += values.get(1).getInputPattern().get(j)+"\n";
             }
-            for (int j = 0; j < values.get(0).param.size(); j++) {
+            for (int j = 0; j < values.get(0).getInputPattern().size(); j++) {
                 if (input.equals(values.get(0).getInputPattern().get(j).toString())) {
                     return values.get(0).selectionType;
                 } else if (input.equals(values.get(1).getInputPattern().get(j).toString())) {
