@@ -360,4 +360,16 @@
             <Eval id="details">false</Eval>
         </Evals>
     </Fact>
+    <Fact id="fifa">
+        <Description value="Fifa 15"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="graphics">false</Eval>
+            <Eval id="multiplayer">true</Eval>
+            <Eval id="pegi">false</Eval>
+            <Eval id="type">false</Eval>
+            <Eval id="view">true</Eval>
+            <Eval id="details">false</Eval>
+        </Evals>
+    </Fact>
 </Facts>
