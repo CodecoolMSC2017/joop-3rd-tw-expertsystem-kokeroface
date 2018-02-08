@@ -2,7 +2,7 @@ package com.codecool;
 
 public class Question {
     
-    private String id, question;
+    protected String id, question;
     private Answer answer;
 
     Question(String id, String question,Answer answer) {
@@ -27,7 +27,7 @@ public class Question {
     }
 
     public boolean getEvaluatedAnswer(String input) throws Exception {
-        boolean choice = answer.evaluateAnswerByInput(input);
-        return choice;
+        return answer.evaluateAnswerByInput(input);
+
     }
 }
