@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Rules>
     <Rule id="money">
-        <Question>Do you have 30 Eur for a Game?</Question>
+        <Question>Do you have 30€ for a Game?</Question>
         <Answer>
             <Selection value="true">
                 <SingleValue value="yes"/>
@@ -23,7 +23,7 @@
         </Answer>
     </Rule>
     <Rule id="multiplayer">
-        <Question>Playing with others important for you?</Question>
+        <Question>Is playing with others important for you?</Question>
         <Answer>
             <Selection value="true">
                 <SingleValue value="yes"/>
@@ -45,7 +45,7 @@
         </Answer>
     </Rule>
     <Rule id="type">
-        <Question>Do you want an openworld game</Question>
+        <Question>Do you want an open world game?</Question>
         <Answer>
             <Selection value="true">
                 <SingleValue value="yes"/>
