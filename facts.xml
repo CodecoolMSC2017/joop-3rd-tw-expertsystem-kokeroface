@@ -64,7 +64,7 @@
         <Description value="Counter Strike: Global Offensive"/>
         <Evals>
             <Eval id="money">false</Eval>
-            <Eval id="graphics">true</Eval>
+            <Eval id="graphics">false</Eval>
             <Eval id="multiplayer">true</Eval>
             <Eval id="pegi">true</Eval>
 	        <Eval id="type">false</Eval>
@@ -250,6 +250,114 @@
             <Eval id="type">true</Eval>
             <Eval id="view">true</Eval>
             <Eval id="details">true</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="evil_within">
+        <Description value="Evil Within 2"/>
+        <Evals>
+            <Eval id="money">true</Eval>
+            <Eval id="graphics">true</Eval>
+            <Eval id="multiplayer">false</Eval>
+            <Eval id="pegi">true</Eval>
+            <Eval id="type">true</Eval>
+            <Eval id="view">true</Eval>
+            <Eval id="details">true</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="plants_vs_zombies">
+        <Description value="Plants vs Zombies 2"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="graphics">false</Eval>
+            <Eval id="multiplayer">true</Eval>
+            <Eval id="pegi">false</Eval>
+            <Eval id="type">true</Eval>
+            <Eval id="view">true</Eval>
+            <Eval id="details">false</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="hellblade">
+        <Description value="Hellblade Seuna's Sacrifice"/>
+        <Evals>
+            <Eval id="money">true</Eval>
+            <Eval id="graphics">false</Eval>
+            <Eval id="multiplayer">true</Eval>
+            <Eval id="pegi">true</Eval>
+            <Eval id="type">false</Eval>
+            <Eval id="view">true</Eval>
+            <Eval id="details">true</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="zelda_breath">
+        <Description value="Zelda Breath of the Wild"/>
+        <Evals>
+            <Eval id="money">true</Eval>
+            <Eval id="graphics">false</Eval>
+            <Eval id="multiplayer">false</Eval>
+            <Eval id="pegi">false</Eval>
+            <Eval id="type">true</Eval>
+            <Eval id="view">true</Eval>
+            <Eval id="details">true</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="zelda_ocarina">
+        <Description value="Zelda Ocarina of Time"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="graphics">false</Eval>
+            <Eval id="multiplayer">false</Eval>
+            <Eval id="pegi">false</Eval>
+            <Eval id="type">true</Eval>
+            <Eval id="view">true</Eval>
+            <Eval id="details">true</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="rainbow">
+        <Description value="Rainbow Six Siege"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="graphics">true</Eval>
+            <Eval id="multiplayer">true</Eval>
+            <Eval id="pegi">true</Eval>
+            <Eval id="type">false</Eval>
+            <Eval id="view">false</Eval>
+            <Eval id="details">false</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="mirrors_edge">
+        <Description value="Mirror's Edge"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="graphics">false</Eval>
+            <Eval id="multiplayer">false</Eval>
+            <Eval id="pegi">false</Eval>
+            <Eval id="type">false</Eval>
+            <Eval id="view">false</Eval>
+            <Eval id="details">false</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="dark_souls">
+        <Description value="Dark Souls 2: Scholar of the first Sin"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="graphics">false</Eval>
+            <Eval id="multiplayer">false</Eval>
+            <Eval id="pegi">true</Eval>
+            <Eval id="type">true</Eval>
+            <Eval id="view">true</Eval>
+            <Eval id="details">false</Eval>
+        </Evals>
+    </Fact>
+    <Fact id="uncharted">
+        <Description value="Uncharted 4"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="graphics">true</Eval>
+            <Eval id="multiplayer">false</Eval>
+            <Eval id="pegi">true</Eval>
+            <Eval id="type">false</Eval>
+            <Eval id="view">true</Eval>
+            <Eval id="details">false</Eval>
         </Evals>
     </Fact>
 </Facts>
