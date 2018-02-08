@@ -40,7 +40,6 @@ public class ESProvider {
                 }
                 games.put(fact.getDescription(),counter);
             }
-            counter = 0;
         }
     }
 
