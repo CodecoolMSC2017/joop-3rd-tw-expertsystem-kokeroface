@@ -5,6 +5,6 @@ public class Main {
         ESProvider esp = new ESProvider(new FactParser(), new RuleParser());
         esp.collectAnswers();
 
-        System.out.println("\nGame(s) closest to your preference: "+esp.evaluate()+".");
+        System.out.println(esp.evaluate());
     }
 }
