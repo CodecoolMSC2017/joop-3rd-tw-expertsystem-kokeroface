@@ -17,9 +17,7 @@ public class ESProviderGUI {
     public void collectAnswers(Map<String, Boolean> answers) {
         Iterator<Question> questionIterator = ruleRepository.getIterator();
         Iterator<Fact> factIterator = factRepository.getIterator();
-        while (questionIterator.hasNext()) {
-            Question question = questionIterator.next();
-        }
+
         while (factIterator.hasNext()) {
             Map<String, Boolean> questions = new HashMap<>();
             Fact fact = factIterator.next();
@@ -38,38 +36,6 @@ public class ESProviderGUI {
                 games.put(fact.getDescription(),counter);
             }
         }
-    }
-
-    private boolean getAnswerByQuestion(String questionId) {
-
-        //Scanner userInput = new Scanner(System.in);
-        Iterator<Question> iterator = ruleRepository.getIterator();
-
-        while (iterator.hasNext()) {
-            Question question = iterator.next();
-            List<Value> values = question.getAnswer().getValues();
-            if (questionId.equals(question.getId())) {
-                if (values.get(0) instanceof SingleValue) {
-                    System.out.println(question.getQuestion());
-                } else {
-                    System.out.println(question.getQuestion());
-                    System.out.println("\nChoices:");
-                    for (int j = 0; j < values.get(0).param.size(); j++) {
-                        System.out.println(values.get(0).param.get(j));
-                        System.out.println(values.get(1).param.get(j));
-                    }
-                }
-                while (true) {
-                    try {
-                        //return question.getEvaluatedAnswer(answer);
-
-                    } catch (Exception e) {
-                        System.out.println(e.getMessage());
-                    }
-                }
-            }
-        }
-        return false;
     }
 
     public String evaluate() {
