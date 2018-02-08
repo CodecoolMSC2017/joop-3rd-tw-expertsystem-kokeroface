@@ -27,7 +27,7 @@
     <Fact id="assetto_corsa">
         <Description value="Assetto Corsa"/>
         <Evals>
-            <Eval id="money">false</Eval>
+            <Eval id="money">true</Eval>
             <Eval id="graphics">true</Eval>
             <Eval id="multiplayer">true</Eval>
             <Eval id="pegi">false</Eval>
@@ -114,10 +114,10 @@
             <Eval id="money">true</Eval>
             <Eval id="graphics">true</Eval>
             <Eval id="multiplayer">true</Eval>
-            <Eval id="pegi">false</Eval>
+            <Eval id="pegi">true</Eval>
 	        <Eval id="type">false</Eval>
             <Eval id="view">true</Eval>
-            <Eval id="details">false</Eval>
+            <Eval id="details">true</Eval>
         </Evals>
     </Fact>
     <Fact id="heavy_rain">
