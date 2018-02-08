@@ -77,12 +77,18 @@ public class ESProvider {
     }
 
     public String evaluate() {
+        int gameCount = 0;
         int maxValueInMap = (Collections.max(games.values()));
         for (Map.Entry<String, Integer> item : games.entrySet()) {
             if (item.getValue() == maxValueInMap) {
+                gameCount++;
                 game += item.getKey()+", ";
             }
         }
-        return game.substring(0, game.length() - 2);
+        if (gameCount == 1) {
+            return "We have found the perfect game for you: "+game.substring(0, game.length() - 2);
+        } else {
+            return "The closest games to your preferences: "+game.substring(0, game.length() - 2);
+        }
     }
 }
