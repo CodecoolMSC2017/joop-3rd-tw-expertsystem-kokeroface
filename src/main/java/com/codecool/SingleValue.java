@@ -1,6 +1,5 @@
 package com.codecool;
 
-import java.util.List;
 
 class SingleValue extends Value {
 
