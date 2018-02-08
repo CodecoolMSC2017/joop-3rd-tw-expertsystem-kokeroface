@@ -14,7 +14,7 @@ public abstract class Value {
     }
 
     public Value(String param, boolean selectionType) {
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         list.add(param);
         this.param = list;
         this.selectionType = selectionType;
