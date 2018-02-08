@@ -17,13 +17,10 @@ class RuleRepositoryTest {
     void setUp() {
         ruleRepo = new RuleRepository();
         SingleValue single = new SingleValue("yes",true);
-        List<String> multipl = new ArrayList<>();
-        multipl.add("nein");
-        multipl.add("kuruc");
-        MultipleValue multi = new MultipleValue(multipl,false);
+        SingleValue single2 = new SingleValue("no",false);
         Answer answ = new Answer();
         answ.addValue(single);
-        answ.addValue(multi);
+        answ.addValue(single2);
         question = new Question("Money","Do you want money?",answ);
     }
 
@@ -38,7 +35,7 @@ class RuleRepositoryTest {
     void getIterator() throws Exception {
         ruleRepo.addQuestion(question);
         Question questi= ruleRepo.getIterator().next();
-        assertEquals(false,questi.getEvaluatedAnswer("kuruc"));
+        assertEquals(false,questi.getEvaluatedAnswer("no"));
         assertEquals(true,questi.getEvaluatedAnswer("yes"));
     }
 }
