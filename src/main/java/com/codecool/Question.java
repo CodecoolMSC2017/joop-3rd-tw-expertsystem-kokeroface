@@ -2,7 +2,7 @@ package com.codecool;
 
 public class Question {
     
-    String id, question;
+    private String id, question;
     private Answer answer;
 
     Question(String id, String question,Answer answer) {

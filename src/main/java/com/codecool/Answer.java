@@ -5,10 +5,7 @@ import java.util.ArrayList;
 
 public class Answer {
 
-    private List<Value> values;
-    public Answer() {
-        values = new ArrayList<>();
-    }
+    private List<Value> values = new ArrayList<>();
 
     public boolean evaluateAnswerByInput(String input) throws Exception {
         if (values.get(0) instanceof SingleValue) {

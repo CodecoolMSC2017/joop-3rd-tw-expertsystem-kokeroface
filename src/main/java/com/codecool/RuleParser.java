@@ -13,9 +13,9 @@ public class RuleParser extends XMLParser {
         loadXmlDocument("rules.xml");
         RuleRepository ruleRepository = new RuleRepository();
         Document doc = getDoc();
-        NodeList nlist = doc.getElementsByTagName("Rule");
-        for(int i = 0; i < nlist.getLength(); i++){
-            Node node = nlist.item(i);
+        NodeList nList = doc.getElementsByTagName("Rule");
+        for(int i = 0; i < nList.getLength(); i++){
+            Node node = nList.item(i);
             if(node.getNodeType() == Node.ELEMENT_NODE) {
                 Element eElement = (Element) node;
                 String id = eElement.getAttribute("id");
