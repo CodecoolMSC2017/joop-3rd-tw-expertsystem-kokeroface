@@ -10,8 +10,6 @@ import java.util.List;
 
 abstract class XMLParser {
 
-    private List<Fact> facts = new ArrayList<>();
-    private List<Question> questions = new ArrayList<>();
     private Document doc;
 
     void loadXmlDocument(String xmlPath) throws Exception {
