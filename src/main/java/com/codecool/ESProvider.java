@@ -43,7 +43,7 @@ public class ESProvider {
         }
     }
 
-    public boolean getAnswerByQuestion(String questionId) {
+    private boolean getAnswerByQuestion(String questionId) {
 
         Scanner userInput = new Scanner(System.in);
         Iterator<Question> iterator = ruleRepository.getIterator();
@@ -65,8 +65,8 @@ public class ESProvider {
                 while (true) {
                     try {
                         String answer = userInput.nextLine();
-                        boolean result = question.getEvaluatedAnswer(answer);
-                        return result;
+                        return question.getEvaluatedAnswer(answer);
+
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
                     }
