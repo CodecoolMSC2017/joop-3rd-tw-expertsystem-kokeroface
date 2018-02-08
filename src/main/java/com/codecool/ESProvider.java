@@ -9,6 +9,7 @@ public class ESProvider {
     private Map<String, Boolean> answers = new HashMap<>();
     private Map<String, Integer> games = new HashMap<>();
     private String game = "";
+    private int questionCount;
 
     ESProvider(FactParser fact, RuleParser rule) throws Exception {
         this.factRepository = fact.getFactRepository();
@@ -20,6 +21,7 @@ public class ESProvider {
         Iterator<Fact> factIterator = factRepository.getIterator();
         while (questionIterator.hasNext()) {
             Question question = questionIterator.next();
+            questionCount++;
             boolean answer = getAnswerByQuestion(question.id);
             this.answers.put(question.getId(), answer);
         }
@@ -86,9 +88,9 @@ public class ESProvider {
             }
         }
         if (gameCount == 1) {
-            return "We have found the perfect game for you: "+game.substring(0, game.length() - 2);
+            return "We have found the perfect game for you: "+game.substring(0, game.length() - 2)+", with "+maxValueInMap+" out of " + questionCount +" matches!";
         } else {
-            return "The closest games to your preferences: "+game.substring(0, game.length() - 2);
+            return "The closest games to your preferences: "+game.substring(0, game.length() - 2)+", with "+maxValueInMap+" out of "+ questionCount + " matches.";
         }
     }
 }

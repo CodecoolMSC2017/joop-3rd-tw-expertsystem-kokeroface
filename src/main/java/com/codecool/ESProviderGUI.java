@@ -8,6 +8,7 @@ public class ESProviderGUI {
     private RuleRepository ruleRepository;
     private Map<String, Integer> games = new HashMap<>();
     private String game = "";
+    private int maxValueInMap, gameCount;
 
     ESProviderGUI(FactParser fact, RuleParser rule) throws Exception {
         this.factRepository = fact.getFactRepository();
@@ -39,12 +40,22 @@ public class ESProviderGUI {
     }
 
     public String evaluate() {
-        int maxValueInMap = (Collections.max(games.values()));
+        maxValueInMap = (Collections.max(games.values()));
         for (Map.Entry<String, Integer> item : games.entrySet()) {
             if (item.getValue() == maxValueInMap) {
+                gameCount++;
                 game += item.getKey()+", ";
             }
         }
-        return game.substring(0, game.length() - 2);
+        game = game.substring(0, game.length() - 2);
+        return game;
+    }
+
+    public int getMaxValueInMap() {
+        return maxValueInMap;
+    }
+
+    public int getGameCount() {
+        return gameCount;
     }
 }

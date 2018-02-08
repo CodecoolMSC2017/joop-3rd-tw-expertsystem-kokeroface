@@ -7,8 +7,9 @@ import java.util.List;
 import javax.swing.*;
 
 public class GUI extends JFrame {
-    private GridLayout experimentLayout = new GridLayout(32, 5);
+    private GridLayout experimentLayout = new GridLayout(33, 5);
     private Map<String, Boolean> answers = new HashMap<>();
+    private int questionNumber;
 
     private GUI(String name) {
         super(name);
@@ -36,6 +37,7 @@ public class GUI extends JFrame {
         JRadioButton button;
         List<JRadioButton> buttons = new ArrayList<>();
         while (questionIterator.hasNext()) {
+            questionNumber++;
             Question question = questionIterator.next();
             JLabel label = new JLabel(question.getQuestion());
             compsToExperiment.add(label);
@@ -69,8 +71,10 @@ public class GUI extends JFrame {
         compsToExperiment.add(evaluate);
         compsToExperiment.add(new JLabel(""));
         JLabel evaluation = new JLabel("");
-        compsToExperiment.add(new JLabel("Game(s) closest to your preference:"));
+        JLabel answerEvaluation = new JLabel("");
+        compsToExperiment.add(answerEvaluation);
         compsToExperiment.add(evaluation);
+        compsToExperiment.add(new JLabel(""));
         pane.add(compsToExperiment, BorderLayout.NORTH);
         pane.add(new JSeparator(), BorderLayout.CENTER);
 
@@ -142,7 +146,13 @@ public class GUI extends JFrame {
                     try {
                         esp = new ESProviderGUI(new FactParser(), new RuleParser());
                         esp.collectAnswers(answers);
-                        evaluation.setText(esp.evaluate());
+                        if (esp.getGameCount() != 1) {
+                            answerEvaluation.setText("The closest games to your preferences: ");
+                            evaluation.setText(esp.evaluate()+", with "+esp.getMaxValueInMap()+" out of "+questionNumber+" matches.");
+                        } else {
+                            answerEvaluation.setText("We have found the perfect game for you: ");
+                            evaluation.setText(esp.evaluate()+", with "+esp.getMaxValueInMap()+" out of "+questionNumber+" matches!");
+                        }
 
                     } catch (Exception f) {
                         f.printStackTrace();
