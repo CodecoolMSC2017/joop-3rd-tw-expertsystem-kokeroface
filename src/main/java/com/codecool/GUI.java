@@ -151,8 +151,13 @@ public class GUI extends JFrame {
                             answerEvaluation.setText("The closest games to your preferences: ");
                             evaluation.setText(esp.evaluate()+", with "+esp.getMaxValueInMap()+" out of "+questionNumber+" matches.");
                         } else {
-                            answerEvaluation.setText("We have found the perfect game for you: ");
-                            evaluation.setText(esp.evaluate()+", with "+esp.getMaxValueInMap()+" out of "+questionNumber+" matches!");
+                            if (esp.getGameCount() == esp.getMaxValueInMap()) {
+                                answerEvaluation.setText("We have found the perfect game for you: ");
+                                evaluation.setText(esp.evaluate()+", with "+esp.getMaxValueInMap()+" out of "+questionNumber+" matches!");
+                            } else {
+                                answerEvaluation.setText("The closest game to your preferences: ");
+                                evaluation.setText(esp.evaluate()+", with "+esp.getMaxValueInMap()+" out of "+questionNumber+" matches!");
+                            }
                         }
 
                     } catch (Exception f) {
