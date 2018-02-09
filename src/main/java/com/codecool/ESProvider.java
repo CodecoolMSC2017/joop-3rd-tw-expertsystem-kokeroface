@@ -88,7 +88,11 @@ public class ESProvider {
             }
         }
         if (gameCount == 1) {
-            return "We have found the perfect game for you: "+game.substring(0, game.length() - 2)+", with "+maxValueInMap+" out of " + questionCount +" matches!";
+            if (gameCount == maxValueInMap) {
+                return "We have found the perfect game for you: "+game.substring(0, game.length() - 2)+", with "+maxValueInMap+" out of " + questionCount +" matches!";
+            } else {
+                return "We have found the closest game to your preferences: "+game.substring(0, game.length() - 2)+", with "+maxValueInMap+" out of " + questionCount +" matches!";
+            }
         } else {
             return "The closest games to your preferences: "+game.substring(0, game.length() - 2)+", with "+maxValueInMap+" out of "+ questionCount + " matches.";
         }
