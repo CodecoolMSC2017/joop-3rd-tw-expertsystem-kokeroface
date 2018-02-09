@@ -40,6 +40,7 @@ public class ESProviderGUI {
     }
 
     public String evaluate() {
+        game = "";
         maxValueInMap = (Collections.max(games.values()));
         for (Map.Entry<String, Integer> item : games.entrySet()) {
             if (item.getValue() == maxValueInMap) {

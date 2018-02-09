@@ -146,7 +146,8 @@ public class GUI extends JFrame {
                     try {
                         esp = new ESProviderGUI(new FactParser(), new RuleParser());
                         esp.collectAnswers(answers);
-                        if (esp.getGameCount() != 1) {
+                        esp.evaluate();
+                        if (esp.getGameCount() > 1) {
                             answerEvaluation.setText("The closest games to your preferences: ");
                             evaluation.setText(esp.evaluate()+", with "+esp.getMaxValueInMap()+" out of "+questionNumber+" matches.");
                         } else {
